@@ -235,307 +235,128 @@ const Portfolio = () => {
 
   // Project categories with subcategories
   const projectCategories = {
-    'digital-marketing': {
-      name: 'Digital Marketing',
+    'work-experience': {
+      name: 'Work Experience',
+      icon: Award,
+      color: 'blue',
+      subcategories: [
+        { id: 'management', name: 'Management', icon: TrendingUp },
+        { id: 'executive', name: 'Executive', icon: Star }
+      ]
+    },
+    'project-based': {
+      name: 'Project-Based',
       icon: Megaphone,
       color: 'purple',
       subcategories: [
-        { id: 'graphic-design', name: 'Graphic Design', icon: PenTool },
-        { id: 'social-media', name: 'Social Media Content', icon: Video },
-        { id: 'case-study', name: 'Case Studies', icon: Award },
-        { id: 'seo', name: 'SEO Projects', icon: TrendingUp },
-        { id: 'email-marketing', name: 'Email Marketing', icon: Mail },
-        { id: 'paid-ads', name: 'Paid Advertising', icon: BarChart }
-      ]
-    },
-    'web-development': {
-      name: 'Web Development',
-      icon: Code2,
-      color: 'blue',
-      subcategories: [
-        { id: 'wordpress', name: 'WordPress Sites', icon: Globe },
-        { id: 'react-apps', name: 'React/JavaScript Apps', icon: Code2 },
-        { id: 'landing-pages', name: 'Landing Pages', icon: Sparkles },
-        { id: 'ecommerce', name: 'E-Commerce', icon: ShoppingCart },
-        { id: 'case-study', name: 'Case Studies', icon: Award }
+        { id: 'marketing', name: 'Social Media Marketing', icon: Video },
+        { id: 'design', name: 'Graphic Design', icon: PenTool }
       ]
     }
   };
 
   const projects = [
-    // Digital Marketing Projects - Graphic Design (images only)
     {
-      title: "Brand Identity Design",
-      description: "Complete brand identity package including logo, color palette, typography, and brand guidelines for modern businesses.",
-      tools: ["Canva", "Adobe Illustrator", "Brand Strategy"],
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop",
+      title: "Digital Marketing Manager @ ORGALIFE",
+      description: "Managed social media platforms, content planning, and audience engagement. Executed Meta Ads campaigns and WhatsApp marketing activities. Planned product launch campaigns and designed graphics.",
+      tools: ["Meta Ads", "WhatsApp Marketing", "Graphic Design"],
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
       liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "graphic-design",
+      category: "work-experience",
+      subCategory: "management",
       mediaType: "image"
     },
     {
-      title: "Social Media Templates",
-      description: "Professional social media post templates for Instagram, Facebook, and LinkedIn with consistent branding.",
-      tools: ["Canva Pro", "Design Systems", "Social Media"],
+      title: "Social Media Executive @ CHOUHAN HOUSING",
+      description: "Managed Instagram, Facebook, and LinkedIn to increase brand awareness. Executed marketing campaigns, designed promotional creatives, and generated leads. Monitored insights and prepared reports.",
+      tools: ["Instagram", "Facebook", "Lead Gen", "Reporting"],
       image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&h=600&fit=crop",
       liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "graphic-design",
+      category: "work-experience",
+      subCategory: "executive",
       mediaType: "image"
     },
     {
-      title: "Marketing Collateral",
-      description: "Professional marketing materials including brochures, flyers, and business cards with cohesive design.",
-      tools: ["Adobe Creative Suite", "Print Design", "Typography"],
-      image: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "graphic-design",
-      mediaType: "image"
-    },
-    
-    // Social Media Content (videos with different aspect ratios)
-    {
-      title: "Instagram Reels - Vertical 9:16",
-      description: "Viral Instagram reels content with engaging hooks, trending audio, and high retention rates.",
-      tools: ["Video Editing", "Instagram", "Content Strategy"],
-      video: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      aspectRatio: "9:16",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "social-media",
-      mediaType: "video"
-    },
-    {
-      title: "YouTube Content - Landscape 16:9",
-      description: "Professional YouTube content with SEO-optimized titles, thumbnails, and posting schedule.",
-      tools: ["YouTube SEO", "Video Production", "Analytics"],
-      video: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      aspectRatio: "16:9",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "social-media",
-      mediaType: "video"
-    },
-    {
-      title: "Social Square Posts - 1:1",
-      description: "Square format social media videos optimized for Instagram feed and Facebook posts.",
-      tools: ["Content Creation", "Social Media", "Editing"],
-      video: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      aspectRatio: "1:1",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "social-media",
-      mediaType: "video"
-    },
-    
-    // Case Studies
-    {
-      title: "E-Commerce Growth Strategy",
-      description: "Complete case study: 300% revenue growth through comprehensive digital marketing strategy and optimization.",
-      tools: ["Strategy", "Analytics", "Multi-Channel"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "case-study",
-      mediaType: "image"
-    },
-    {
-      title: "Local SEO Optimization",
-      description: "Complete local SEO strategy resulting in 300% increase in local search visibility and Google Maps rankings.",
-      tools: ["Local SEO", "Google My Business", "Schema Markup"],
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "seo",
-      mediaType: "image"
-    },
-    {
-      title: "Technical SEO Audit",
-      description: "Comprehensive technical SEO audit and optimization improving Core Web Vitals and search rankings.",
-      tools: ["SEO Tools", "Google Search Console", "PageSpeed"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "seo",
-      mediaType: "image"
-    },
-    {
-      title: "Email Automation Flow",
-      description: "Advanced email marketing automation with segmentation, personalization, and conversion tracking.",
-      tools: ["Mailchimp", "n8n Automation", "Email Marketing"],
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "email-marketing",
-      mediaType: "image"
-    },
-    {
-      title: "Newsletter Design",
-      description: "Responsive email newsletter templates with high open rates and click-through rates.",
-      tools: ["HTML Email", "Responsive Design", "Canva"],
-      image: "https://images.unsplash.com/photo-1586892478025-2b5472316f22?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "email-marketing",
-      mediaType: "image"
-    },
-    {
-      title: "Google Ads Campaign",
-      description: "High-converting Google Ads campaigns with optimized bidding strategies and 200% ROI improvement.",
-      tools: ["Google Ads", "Analytics", "Conversion Tracking"],
+      title: "Digital Marketing Executive @ GATE ACADEMY X UNACADEMY",
+      description: "Oversaw YouTube channel, executed Meta Ads campaigns, designed thumbnails, and implemented on-page and off-page SEO strategies to improve organic traffic.",
+      tools: ["YouTube SEO", "Meta Ads", "SEO"],
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
       liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "paid-ads",
+      category: "work-experience",
+      subCategory: "executive",
       mediaType: "image"
     },
     {
-      title: "Meta Ads Strategy",
-      description: "Facebook and Instagram ad campaigns with precise audience targeting and high engagement rates.",
-      tools: ["Meta Ads Manager", "Pixel Tracking", "A/B Testing"],
+      title: "Social Media Manager @ GENIQUE EDUCATION",
+      description: "Managed and grew social media accounts across platforms. Handled YouTube SEO, audience engagement, and analyzed performance insights to improve reach.",
+      tools: ["Social Media", "Analytics", "Strategy"],
       image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=800&h=600&fit=crop",
       liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "paid-ads",
-      mediaType: "image"
-    },
-
-    // Web Development Projects
-    {
-      title: "Project Kisan",
-      description: "An AI-powered farming assistant under development for Google Hackathon 2025. Designed to assist farmers with soil analysis, irrigation advice, crop planning, and organic solutions using modern AI technologies.",
-      tools: ["React", "AI/ML", "Tailwind CSS", "API Integration"],
-      image: projectKisan,
-      liveLink: "https://project-kisan-ai-farming-assistant-fawn.vercel.app/",
-      category: "web-development",
-      subCategory: "react-apps",
+      category: "work-experience",
+      subCategory: "management",
       mediaType: "image"
     },
     {
-      title: "LinkPost AI",
-      description: "An AI-powered LinkedIn post generator built with React and OpenAI/Gemini API. Helps craft engaging, SEO-optimized posts with just a click.",
-      tools: ["React", "OpenAI API", "Gemini API", "JavaScript"],
-      image: linkpostAi,
-      liveLink: "https://linkpostai.netlify.app/",
-      category: "web-development",
-      subCategory: "react-apps",
-      mediaType: "image"
-    },
-    {
-      title: "Calm Mind AI",
-      description: "An AI-powered mental health support web app providing personalized guidance and resources for mental wellness.",
-      tools: ["React", "AI Integration", "Vite", "Tailwind CSS"],
-      image: calmmindAi,
-      liveLink: "https://calmmindai.netlify.app/",
-      category: "web-development",
-      subCategory: "react-apps",
-      mediaType: "image"
-    },
-    {
-      title: "ShopEZ E-Commerce",
-      description: "A modern, demo e-commerce platform built with React, Vite, and Tailwind CSS featuring product catalogs and shopping cart.",
-      tools: ["React", "Vite", "Tailwind CSS", "E-Commerce"],
-      image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop",
+      title: "Rajim Kumbh (Jan 2026 - Feb 2026)",
+      description: "Managed end-to-end social media marketing for the event. Planned content calendars, designed promotional posters, and increased event visibility.",
+      tools: ["Content Calendar", "Design", "Event Marketing"],
+      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
       liveLink: "#",
-      category: "web-development",
-      subCategory: "ecommerce",
+      category: "project-based",
+      subCategory: "marketing",
       mediaType: "image"
     },
     {
-      title: "Get Web Digital",
-      description: "Professional business website built with WordPress, featuring custom theme, SEO optimization, and contact forms.",
-      tools: ["WordPress", "Custom Theme", "SEO", "Contact Forms"],
+      title: "Agrawal Samaj Event (2025)",
+      description: "Planned and managed social media promotions for the event. Designed digital creatives and executed content strategies to maximize audience engagement.",
+      tools: ["Social Media", "Graphic Design"],
       image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=800&h=600&fit=crop",
       liveLink: "#",
-      category: "web-development",
-      subCategory: "wordpress",
+      category: "project-based",
+      subCategory: "marketing",
       mediaType: "image"
     },
     {
-      title: "Business Portfolio Site",
-      description: "Responsive WordPress business portfolio with custom post types, galleries, and client testimonials.",
-      tools: ["WordPress", "Elementor", "Custom CSS", "Plugins"],
+      title: "Saras Mela (2024)",
+      description: "Managed social media platforms and event promotions. Designed banners, posters, and promotional creatives to maintain consistent branding.",
+      tools: ["Graphic Design", "Social Media", "Branding"],
       image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&h=600&fit=crop",
       liveLink: "#",
-      category: "web-development",
-      subCategory: "wordpress",
-      mediaType: "image"
-    },
-    {
-      title: "Tindog Landing Page",
-      description: "A responsive Tinder-like landing page for dogs, built with Bootstrap 5. Features responsive navigation, pricing cards, and testimonial sections.",
-      tools: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript"],
-      image: tindog,
-      liveLink: "https://deviljitu1.github.io/Tindog/",
-      category: "web-development",
-      subCategory: "landing-pages",
-      mediaType: "image"
-    },
-    {
-      title: "Poetree Blog",
-      description: "A minimalist poetry blog with elegant typography and smooth animations, built with HTML, CSS and JavaScript.",
-      tools: ["HTML5", "CSS3", "JavaScript", "Animations"],
-      image: poetree,
-      liveLink: "https://poetreebird.netlify.app/",
-      category: "web-development",
-      subCategory: "landing-pages",
-      mediaType: "image"
-    },
-    {
-      title: "Personal Portfolio",
-      description: "My responsive personal portfolio website showcasing projects, skills and experience. Built with modern web technologies.",
-      tools: ["React", "Tailwind CSS", "Vite", "TypeScript"],
-      image: portfolioProject,
-      liveLink: "https://nahushpatel.in/",
-      category: "web-development",
-      subCategory: "react-apps",
-      mediaType: "image"
-    },
-    {
-      title: "Full-Stack App Development",
-      description: "Complete case study: Built scalable full-stack application with React frontend and Node.js backend, handling 10K+ users.",
-      tools: ["Full-Stack", "React", "Node.js", "Database"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "web-development",
-      subCategory: "case-study",
+      category: "project-based",
+      subCategory: "design",
       mediaType: "image"
     }
   ];
 
   const skills = {
     frontend: [
-      { name: "HTML5", level: 95, icon: "🌐" },
-      { name: "CSS3", level: 90, icon: "🎨" },
-      { name: "JavaScript", level: 88, icon: "⚡" },
-      { name: "React", level: 85, icon: "⚛️" },
-      { name: "WordPress", level: 90, icon: "📝" },
-      { name: "Git & GitHub", level: 82, icon: "📦" }
+      { name: "Content Creation", level: 95, icon: "✍️" },
+      { name: "Graphic Design", level: 90, icon: "🎨" },
+      { name: "Email Marketing", level: 88, icon: "📧" },
+      { name: "Campaign Planning", level: 85, icon: "📅" },
+      { name: "Marketing Automation", level: 90, icon: "🤖" },
+      { name: "E-commerce Marketing", level: 82, icon: "🛒" }
     ],
     marketing: [
-      { name: "SEO", level: 92, icon: "🔍" },
-      { name: "Google Analytics", level: 88, icon: "📊" },
-      { name: "Canva Pro", level: 95, icon: "🎪" },
-      { name: "Social Media Marketing", level: 90, icon: "📱" },
-      { name: "Email Marketing", level: 85, icon: "📧" },
-      { name: "Meta/Google Ads", level: 87, icon: "📢" }
+      { name: "Social Media Mgt", level: 95, icon: "📱" },
+      { name: "Meta Ads Manager", level: 92, icon: "📢" },
+      { name: "SEO Optimization", level: 88, icon: "🔍" },
+      { name: "Digital Strategy", level: 90, icon: "📈" },
+      { name: "Influencer Marketing", level: 85, icon: "🤝" },
+      { name: "Google Analytics", level: 87, icon: "📊" }
     ],
     soft: [
-      { name: "Content Strategy", level: 93, icon: "📋" },
-      { name: "Conversion Optimization", level: 88, icon: "🎯" },
-      { name: "Analytics & Tracking", level: 90, icon: "📈" },
-      { name: "n8n Automation", level: 80, icon: "🤖" },
-      { name: "Problem Solving", level: 95, icon: "💡" }
+      { name: "Meta Business Suite", level: 93, icon: "💼" },
+      { name: "YouTube Studio", level: 88, icon: "▶️" },
+      { name: "Canva & Photoshop", level: 90, icon: "🖼️" },
+      { name: "Shopify", level: 80, icon: "🛍️" },
+      { name: "SEMrush & Yoast", level: 85, icon: "🎯" }
     ]
   };
 
   const certifications = [
-    { name: "Complete Digital Marketing Guide - 27 Courses", issuer: "Udemy", year: "2024" },
-    { name: "Full-Stack Web Development Bootcamp", issuer: "Udemy", year: "2024" },
-    { name: "6 Month Full Digital Marketing Course", issuer: "Professional Training", year: "2025" },
-    { name: "Medical Coding & Billing", issuer: "Omega Healthcare", year: "2024-2025" }
+    { name: "Bachelor of Commerce", issuer: "Sri Agrasen Kanya Mahavialaya, Korba, Chhattisgarh", year: "2026" },
+    { name: "Digital Marketing Course", issuer: "Bizgurukul (Online)", year: "October 2022" }
   ];
 
   // Filter projects based on selected categories
@@ -561,7 +382,7 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="font-bold text-xl bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Nahush Patel
+              Kiran Srivastava
             </div>
             
             {/* Desktop Navigation */}
@@ -636,7 +457,7 @@ const Portfolio = () => {
                 <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-gradient-to-r from-blue-600 via-purple-600 to-pink-600 shadow-2xl hover:scale-105 transition-transform duration-300">
                   <img
                     src={nahushProfile}
-                    alt="Nahush Patel - Web Developer & Digital Marketer"
+                    alt="Kiran Srivastava - Digital Marketing Professional"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -649,13 +470,13 @@ const Portfolio = () => {
             {/* Hero Content */}
             <div className="flex-1 text-left lg:text-left">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-fade-in">
-                Hi, I'm Nahush Patel
+                Hi, I'm Kiran Srivastava
               </h1>
               <p className="text-xl md:text-3xl mb-6 text-gray-700 dark:text-gray-200 animate-fade-in delay-300 font-semibold">
-                Web Developer & Digital Marketer
+                Digital Marketing Professional
               </p>
               <p className="text-lg mb-8 text-gray-600 dark:text-gray-400 max-w-2xl animate-fade-in delay-500 leading-relaxed">
-                Passionate about building responsive, high-performing websites and driving online growth through data-driven digital marketing strategies. A continuous learner dedicated to blending technology and marketing to deliver impactful digital experiences.
+                Creative and detail-oriented Digital Marketing Professional with hands-on experience in social media management, content strategy, Meta Ads, graphic design, WhatsApp marketing, e-commerce coordination, and website management.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in delay-700">
                 <button
@@ -663,10 +484,10 @@ const Portfolio = () => {
                   className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
                 >
                   <Eye size={20} />
-                  View Projects
+                  View Experience
                 </button>
                 <a 
-                  href="/Nahush_Patel_Resume.pdf" 
+                  href="/Kiran_Srivastava_Resume.pdf" 
                   download
                   className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
                 >
@@ -690,11 +511,11 @@ const Portfolio = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm <strong>Nahush Patel</strong>, a passionate Digital Marketer and Web Developer skilled in social media strategy, content creation, SEO, and full-stack web development. I create engaging campaigns that boost online presence and visibility while building responsive, high-performing websites.
+                I'm <strong>Kiran Srivastava</strong>, a passionate Digital Marketing Professional skilled in social media strategy, content creation, SEO, Meta Ads, and graphic design. I execute engaging campaigns that boost online presence and visibility for brands.
               </p>
               
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                With experience at <strong>Omega Healthcare</strong> in medical coding and <strong>Sutherland Global</strong> as Customer Care Executive for Amazon, I bring a unique blend of technical expertise and customer-focused communication skills.
+                With experience at <strong>ORGALIFE</strong>, <strong>CHOUHAN HOUSING</strong>, <strong>GATE ACADEMY</strong>, and <strong>GENIQUE EDUCATION</strong>, I bring a unique blend of campaign execution and data-driven marketing skills.
               </p>
               
               <div className="space-y-4">
@@ -702,15 +523,15 @@ const Portfolio = () => {
                 <div className="grid grid-cols-2 gap-3">
                   {[
                     'Social Media Strategy',
-                    'Web Development',
-                    'SEO Optimization',
-                    'Meta/Google Ads',
-                    'Email Marketing & Automation',
-                    'Analytics & CRO',
-                    'WordPress Development',
-                    'React & JavaScript',
                     'Content Creation',
-                    'n8n Automation'
+                    'SEO Optimization',
+                    'Meta Ads Manager',
+                    'Graphic Design',
+                    'Analytics & Tracking',
+                    'Campaign Planning',
+                    'E-commerce Marketing',
+                    'Influencer Marketing',
+                    'Email Marketing'
                   ].map((competency) => (
                     <div key={competency} className="flex items-center space-x-2 p-2 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors">
                       <div className="w-2 h-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
@@ -723,15 +544,15 @@ const Portfolio = () => {
               <div className="flex flex-wrap gap-3 pt-4">
                 <div className="flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full">
                   <Award size={18} className="text-blue-600" />
-                  <span className="text-sm font-medium">5+ Languages</span>
+                  <span className="text-sm font-medium">Digital Marketer</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 bg-purple-100 dark:bg-purple-900/30 rounded-full">
                   <Star size={18} className="text-purple-600" />
-                  <span className="text-sm font-medium">Full-Stack Developer</span>
+                  <span className="text-sm font-medium">Content Creator</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 bg-pink-100 dark:bg-pink-900/30 rounded-full">
                   <TrendingUp size={18} className="text-pink-600" />
-                  <span className="text-sm font-medium">Digital Marketer</span>
+                  <span className="text-sm font-medium">SEO Specialist</span>
                 </div>
               </div>
             </div>
@@ -741,7 +562,7 @@ const Portfolio = () => {
                 <div className="w-full max-w-md rounded-2xl overflow-hidden shadow-2xl border-4 border-gradient-to-r from-blue-600 to-purple-600">
                   <img
                     src={nahushAbout}
-                    alt="Nahush Patel"
+                    alt="Kiran Srivastava"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -779,8 +600,8 @@ const Portfolio = () => {
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
                     <Code2 className="text-white" size={24} />
                   </div>
-                  <h3 className="text-2xl font-bold text-blue-600 mb-2">Web Development</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Building beautiful user experiences</p>
+                  <h3 className="text-2xl font-bold text-blue-600 mb-2">Content & Design</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Building engaging assets</p>
                 </div>
                 
                 <div className="space-y-6">
@@ -1196,8 +1017,8 @@ const Portfolio = () => {
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <a href="mailto:nahushpatel2@gmail.com" className="text-blue-600 hover:underline">
-                        nahushpatel2@gmail.com
+                      <a href="mailto:srivastavakirann012@gmail.com" className="text-blue-600 hover:underline">
+                        srivastavakirann012@gmail.com
                       </a>
                     </div>
                   </div>
@@ -1208,8 +1029,8 @@ const Portfolio = () => {
                     </div>
                     <div>
                       <p className="font-medium">WhatsApp</p>
-                      <a href="https://wa.me/7875783498" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">
-                        +91 787-578-3498
+                      <a href="https://wa.me/919340630254" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:underline">
+                        +91 934-063-0254
                       </a>
                     </div>
                   </div>
@@ -1220,8 +1041,8 @@ const Portfolio = () => {
                     </div>
                     <div>
                       <p className="font-medium">Website</p>
-                      <a href="https://nahushpatel.in" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline">
-                        nahushpatel.in
+                      <a href="https://www.reallygreatsite.com" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline">
+                        reallygreatsite.com
                       </a>
                     </div>
                   </div>
@@ -1298,15 +1119,15 @@ const Portfolio = () => {
               <a href="https://github.com/deviljitu1" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://nahushpatel.in" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-purple-600 transition-colors">
+              <a href="https://www.reallygreatsite.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-purple-600 transition-colors">
                 <Globe size={24} />
               </a>
             </div>
             <p className="text-gray-600 dark:text-gray-400 mb-2">
-              © 2024 Nahush Patel. All rights reserved.
+              © 2026 Kiran Srivastava. All rights reserved.
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-500">
-              Web Developer & Digital Marketer | Building Digital Experiences
+              Digital Marketing Professional | Building Digital Experiences
             </p>
           </div>
         </div>
