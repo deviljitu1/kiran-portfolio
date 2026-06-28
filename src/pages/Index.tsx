@@ -710,17 +710,17 @@ const Portfolio = () => {
             </MouseParallax>
 
             {/* Hero Content */}
-            <div className="flex-1 text-left lg:text-left">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-fade-in">
+            <div className="flex-1 text-center lg:text-left">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-fade-in">
                 Hi, I'm Kiran Srivastava
               </h1>
               <p className="text-xl md:text-3xl mb-6 text-gray-700 dark:text-gray-200 animate-fade-in delay-300 font-semibold">
                 Digital Marketing Professional
               </p>
-              <p className="text-lg mb-8 text-gray-600 dark:text-gray-400 max-w-2xl animate-fade-in delay-500 leading-relaxed">
+              <p className="text-base md:text-lg mb-8 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto lg:mx-0 animate-fade-in delay-500 leading-relaxed">
                 Creative and detail-oriented Digital Marketing Professional with hands-on experience in social media management, content strategy, Meta Ads, graphic design, WhatsApp marketing, e-commerce coordination, and website management.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in delay-700">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in delay-700">
                 <button
                   onClick={() => scrollToSection('projects')}
                   className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
@@ -953,37 +953,37 @@ const Portfolio = () => {
           </div>
 
           {/* Skills Summary Stats */}
-          <div className="mt-20 grid md:grid-cols-4 gap-8">
+          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center group">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                <Star className="text-white" size={28} />
+              <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+                <Star className="text-white" size={24} />
               </div>
-              <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">16+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium">Skills Mastered</div>
+              <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">16+</div>
+              <div className="text-sm md:text-base text-gray-600 dark:text-gray-400 font-medium">Skills Mastered</div>
             </div>
             
             <div className="text-center group">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                <Code2 className="text-white" size={28} />
+              <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+                <Code2 className="text-white" size={24} />
               </div>
-              <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">6+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium">Development Technologies</div>
+              <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">6+</div>
+              <div className="text-sm md:text-base text-gray-600 dark:text-gray-400 font-medium">Tech Stack</div>
             </div>
             
             <div className="text-center group">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-pink-500 to-red-500 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                <Palette className="text-white" size={28} />
+              <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-pink-500 to-red-500 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+                <Palette className="text-white" size={24} />
               </div>
-              <div className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent mb-2">6+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium">Marketing Tools</div>
+              <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-pink-600 to-red-600 bg-clip-text text-transparent mb-2">6+</div>
+              <div className="text-sm md:text-base text-gray-600 dark:text-gray-400 font-medium">Design Tools</div>
             </div>
             
             <div className="text-center group">
-              <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-500 to-blue-500 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                <TrendingUp className="text-white" size={28} />
+              <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-green-500 to-blue-500 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
+                <TrendingUp className="text-white" size={24} />
               </div>
-              <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-2">89%</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium">Average Proficiency</div>
+              <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-2">89%</div>
+              <div className="text-sm md:text-base text-gray-600 dark:text-gray-400 font-medium">Avg Proficiency</div>
             </div>
           </div>
         </div>
