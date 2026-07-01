@@ -1041,35 +1041,37 @@ const Portfolio = () => {
                     </div>
                   </div>
                   
-                  <div className="p-4 md:p-6">
-                    <h3 className="text-xl font-semibold mb-3 group-hover:text-blue-600 transition-colors">{project.title}</h3>
-                    <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed line-clamp-3">
-                      {project.description}
-                    </p>
-                    
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tools.slice(0, 3).map((tool) => (
-                        <span key={tool} className="px-2 py-1 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 text-xs rounded-md font-medium">
-                          {tool}
-                        </span>
-                      ))}
-                      {project.tools.length > 3 && (
-                        <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs rounded-md">
-                          +{project.tools.length - 3} more
-                        </span>
-                      )}
+                  {project.subCategory !== 'graphic-design' && (
+                    <div className="p-4 md:p-6">
+                      <h3 className="text-xl font-semibold mb-3 group-hover:text-blue-600 transition-colors">{project.title}</h3>
+                      <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed line-clamp-3">
+                        {project.description}
+                      </p>
+                      
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.tools.slice(0, 3).map((tool) => (
+                          <span key={tool} className="px-2 py-1 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 text-xs rounded-md font-medium">
+                            {tool}
+                          </span>
+                        ))}
+                        {project.tools.length > 3 && (
+                          <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-xs rounded-md">
+                            +{project.tools.length - 3} more
+                          </span>
+                        )}
+                      </div>
+                      
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors group-hover:gap-3"
+                      >
+                        <ExternalLink size={16} />
+                        View Project
+                      </a>
                     </div>
-                    
-                    <a
-                      href={project.liveLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors group-hover:gap-3"
-                    >
-                      <ExternalLink size={16} />
-                      View Project
-                    </a>
-                  </div>
+                  )}
                 </div>
               </div>
             ))}
