@@ -47,22 +47,22 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
   return (
     <div
       ref={loaderRef}
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600"
+      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black"
     >
       <div className="text-center space-y-8">
         <div ref={textRef} className="space-y-4">
-          <h2 className="text-4xl md:text-6xl font-bold text-white">
+          <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-wider text-yellow-400">
             Kiran Srivastava
           </h2>
-          <p className="text-xl text-white/90">
+          <p className="text-xl font-medium text-yellow-500/80">
             Loading Portfolio...
           </p>
         </div>
         
-        <div className="w-64 h-2 bg-white/20 rounded-full overflow-hidden">
+        <div className="w-64 h-2 bg-gray-800 rounded-full overflow-hidden">
           <div
             ref={progressRef}
-            className="h-full bg-white rounded-full"
+            className="h-full bg-yellow-400 rounded-full"
             style={{ width: '0%' }}
           />
         </div>

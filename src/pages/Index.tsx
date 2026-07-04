@@ -340,144 +340,7 @@ const Portfolio = () => {
       iframeSrc: "https://www.instagram.com/reel/DLo8Fr0TdBL/embed"
     },
     ...generatedProjects,
-    // Digital Marketing Projects - Graphic Design (images only)
-    {
-      title: "Brand Identity Design",
-      description: "Complete brand identity package including logo, color palette, typography, and brand guidelines for modern businesses.",
-      tools: ["Canva", "Adobe Illustrator", "Brand Strategy"],
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "graphic-design",
-      mediaType: "image"
-    },
-    {
-      title: "Social Media Templates",
-      description: "Professional social media post templates for Instagram, Facebook, and LinkedIn with consistent branding.",
-      tools: ["Canva Pro", "Design Systems", "Social Media"],
-      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "graphic-design",
-      mediaType: "image"
-    },
-    {
-      title: "Marketing Collateral",
-      description: "Professional marketing materials including brochures, flyers, and business cards with cohesive design.",
-      tools: ["Adobe Creative Suite", "Print Design", "Typography"],
-      image: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "graphic-design",
-      mediaType: "image"
-    },
-    
-    // Social Media Content (videos with different aspect ratios)
-    {
-      title: "Instagram Reels - Vertical 9:16",
-      description: "Viral Instagram reels content with engaging hooks, trending audio, and high retention rates.",
-      tools: ["Video Editing", "Instagram", "Content Strategy"],
-      video: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      aspectRatio: "9:16",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "social-media",
-      mediaType: "video"
-    },
-    {
-      title: "YouTube Content - Landscape 16:9",
-      description: "Professional YouTube content with SEO-optimized titles, thumbnails, and posting schedule.",
-      tools: ["YouTube SEO", "Video Production", "Analytics"],
-      video: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      aspectRatio: "16:9",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "social-media",
-      mediaType: "video"
-    },
-    {
-      title: "Social Square Posts - 1:1",
-      description: "Square format social media videos optimized for Instagram feed and Facebook posts.",
-      tools: ["Content Creation", "Social Media", "Editing"],
-      video: "https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4",
-      aspectRatio: "1:1",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "social-media",
-      mediaType: "video"
-    },
-    
-    // Case Studies
-    {
-      title: "E-Commerce Growth Strategy",
-      description: "Complete case study: 300% revenue growth through comprehensive digital marketing strategy and optimization.",
-      tools: ["Strategy", "Analytics", "Multi-Channel"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "case-study",
-      mediaType: "image"
-    },
-    {
-      title: "Local SEO Optimization",
-      description: "Complete local SEO strategy resulting in 300% increase in local search visibility and Google Maps rankings.",
-      tools: ["Local SEO", "Google My Business", "Schema Markup"],
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "seo",
-      mediaType: "image"
-    },
-    {
-      title: "Technical SEO Audit",
-      description: "Comprehensive technical SEO audit and optimization improving Core Web Vitals and search rankings.",
-      tools: ["SEO Tools", "Google Search Console", "PageSpeed"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "seo",
-      mediaType: "image"
-    },
-    {
-      title: "Email Automation Flow",
-      description: "Advanced email marketing automation with segmentation, personalization, and conversion tracking.",
-      tools: ["Mailchimp", "n8n Automation", "Email Marketing"],
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "email-marketing",
-      mediaType: "image"
-    },
-    {
-      title: "Newsletter Design",
-      description: "Responsive email newsletter templates with high open rates and click-through rates.",
-      tools: ["HTML Email", "Responsive Design", "Canva"],
-      image: "https://images.unsplash.com/photo-1586892478025-2b5472316f22?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "email-marketing",
-      mediaType: "image"
-    },
-    {
-      title: "Google Ads Campaign",
-      description: "High-converting Google Ads campaigns with optimized bidding strategies and 200% ROI improvement.",
-      tools: ["Google Ads", "Analytics", "Conversion Tracking"],
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "paid-ads",
-      mediaType: "image"
-    },
-    {
-      title: "Meta Ads Strategy",
-      description: "Facebook and Instagram ad campaigns with precise audience targeting and high engagement rates.",
-      tools: ["Meta Ads Manager", "Pixel Tracking", "A/B Testing"],
-      image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=800&h=600&fit=crop",
-      liveLink: "#",
-      category: "digital-marketing",
-      subCategory: "paid-ads",
-      mediaType: "image"
-    }
+
   ];
 
   const experiences = [
@@ -703,7 +566,7 @@ const Portfolio = () => {
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start animate-fade-in delay-700">
                 <button
                   onClick={() => scrollToSection('projects')}
-                  className="px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 text-sm md:text-base"
+                  className="px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 text-sm md:text-base"
                 >
                   <Eye size={20} />
                   View Experience
@@ -711,7 +574,7 @@ const Portfolio = () => {
                 <a 
                   href="/Kiran_Srivastava_Resume.pdf" 
                   download
-                  className="px-6 py-3 md:px-8 md:py-4 border-2 border-yellow-500 text-yellow-500 rounded-full hover:bg-yellow-500 hover:text-white transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 text-sm md:text-base"
+                  className="px-6 py-3 md:px-8 md:py-4 border-2 border-yellow-500 text-yellow-500 rounded-full hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 text-sm md:text-base"
                 >
                   <Download size={20} />
                   Download Resume
@@ -983,7 +846,7 @@ const Portfolio = () => {
               onClick={() => setSelectedSubCategory('all')}
               className={`px-4 py-2 md:px-6 md:py-3 rounded-full text-sm md:text-base font-medium transition-all duration-300 ${
                 selectedSubCategory === 'all'
-                  ? 'bg-gradient-to-r from-yellow-400 to-yellow-600 text-white shadow-lg scale-105'
+                  ? 'bg-gradient-to-r from-yellow-400 to-yellow-600 text-black shadow-lg scale-105'
                   : 'bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600'
               }`}
             >
@@ -999,7 +862,7 @@ const Portfolio = () => {
                   onClick={() => setSelectedSubCategory(sub.id)}
                   className={`px-4 py-2 md:px-6 md:py-3 rounded-full text-sm md:text-base font-medium transition-all duration-300 flex items-center gap-1.5 md:gap-2 ${
                     selectedSubCategory === sub.id
-                      ? 'bg-gradient-to-r from-yellow-400 to-yellow-600 text-white shadow-lg scale-105'
+                      ? 'bg-gradient-to-r from-yellow-400 to-yellow-600 text-black shadow-lg scale-105'
                       : 'bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600'
                   }`}
                 >
@@ -1017,7 +880,7 @@ const Portfolio = () => {
                 onClick={() => setSelectedGraphicCategory('all')}
                 className={`px-4 py-2 rounded-full text-xs md:text-sm font-medium transition-all duration-300 ${
                   selectedGraphicCategory === 'all'
-                    ? 'bg-yellow-500 text-white shadow-md'
+                    ? 'bg-yellow-500 text-black shadow-md'
                     : 'bg-gray-800 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600'
                 }`}
               >
@@ -1032,7 +895,7 @@ const Portfolio = () => {
                     onClick={() => setSelectedGraphicCategory(gCat)}
                     className={`px-4 py-2 rounded-full text-xs md:text-sm font-medium transition-all duration-300 flex items-center gap-1.5 ${
                       selectedGraphicCategory === gCat
-                        ? 'bg-yellow-500 text-white shadow-md'
+                        ? 'bg-yellow-500 text-black shadow-md'
                         : 'bg-gray-800 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600'
                     }`}
                   >
@@ -1228,7 +1091,7 @@ const Portfolio = () => {
                 <h3 className="text-xl md:text-2xl font-semibold mb-4 md:mb-6">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3 md:space-x-4 p-3 md:p-4 rounded-lg hover:bg-yellow-500 dark:hover:bg-yellow-500/20 transition-colors">
-                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-yellow-400 to-blue-700 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center flex-shrink-0">
                       <Mail className="text-white" size={18} />
                     </div>
                     <div>
@@ -1266,7 +1129,7 @@ const Portfolio = () => {
               </div>
               
               <div className="flex space-x-3 md:space-x-4">
-                <a href="https://www.reallygreatsite.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-yellow-400 to-blue-700 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform">
+                <a href="https://www.reallygreatsite.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform">
                   <Linkedin size={18} />
                 </a>
                 <a href="https://github.com/deviljitu1" target="_blank" rel="noopener noreferrer" className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-gray-700 to-gray-800 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform">
@@ -1314,7 +1177,7 @@ const Portfolio = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full px-6 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 font-medium disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  className="w-full px-6 py-3 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 font-medium disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
