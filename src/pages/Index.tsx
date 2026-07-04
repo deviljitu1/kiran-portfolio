@@ -556,10 +556,10 @@ const Portfolio = () => {
                 <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold mb-3 md:mb-6 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent animate-fade-in">
                   Hi, I'm Kiran Srivastava
                 </h1>
-                <p className="text-lg md:text-3xl mb-3 md:mb-6 text-gray-300 dark:text-gray-200 animate-fade-in delay-300 font-semibold">
+                <p className="text-lg md:text-3xl mb-3 md:mb-6 text-gray-700 dark:text-gray-200 animate-fade-in delay-300 font-semibold">
                   Digital Marketing Professional
                 </p>
-                <p className="text-sm md:text-lg mb-5 md:mb-8 text-gray-400 dark:text-gray-400 max-w-2xl mx-auto lg:mx-0 animate-fade-in delay-500 leading-relaxed">
+                <p className="text-sm md:text-lg mb-5 md:mb-8 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto lg:mx-0 animate-fade-in delay-500 leading-relaxed">
                   Creative and detail-oriented Digital Marketing Professional with hands-on experience in social media management, content strategy, Meta Ads, graphic design, WhatsApp marketing, e-commerce coordination, and website management.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start animate-fade-in delay-700">
