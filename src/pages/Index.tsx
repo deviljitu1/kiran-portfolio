@@ -680,26 +680,26 @@ const Portfolio = () => {
                     ? 'bg-[#0B1120] border-blue-500/20 shadow-[0_0_15px_rgba(37,99,235,0.1)] hover:border-blue-500/40 hover:shadow-[0_0_30px_rgba(37,99,235,0.2)]' 
                     : 'bg-white border-blue-500/20 shadow-xl'
                 }`}>
-                  <div className="text-center mb-4">
-                    <div className="w-12 h-12 md:w-14 md:h-14 mx-auto mb-3 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-[0_0_20px_rgba(59,130,246,0.5)] flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
-                      <Code2 className="text-white" size={20} />
+                  <div className="text-center mb-6 md:mb-8">
+                    <div className="w-14 h-14 md:w-16 md:h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shadow-[0_0_20px_rgba(59,130,246,0.5)] flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
+                      <Code2 className="text-white" size={24} />
                     </div>
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-1">Content & Design</h3>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mb-3">Building engaging assets</p>
-                    <div className="w-10 h-1 bg-blue-500 rounded-full mx-auto"></div>
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-1">Content & Design</h3>
+                    <p className="text-xs md:text-sm text-gray-500 dark:text-gray-400 mb-4">Building engaging assets</p>
+                    <div className="w-12 h-1 bg-blue-500 rounded-full mx-auto"></div>
                   </div>
                   
                   <div className="space-y-2">
                     {skills.frontend.map((skill, index) => (
-                      <div key={skill.name} className="skill-item bg-gray-100 dark:bg-[#12182A] rounded-xl p-2 md:p-3 border border-gray-200 dark:border-white/5" style={{ animationDelay: `${index * 0.1}s` }}>
-                        <div className="flex items-center justify-between mb-2">
-                          <div className="flex items-center gap-2">
-                            <span className="text-base md:text-lg">{skill.icon}</span>
-                            <span className="font-medium text-gray-800 dark:text-gray-200 text-xs md:text-sm">{skill.name}</span>
+                      <div key={skill.name} className="skill-item bg-gray-100 dark:bg-[#12182A] rounded-xl p-3 md:p-4 border border-gray-200 dark:border-white/5" style={{ animationDelay: `${index * 0.1}s` }}>
+                        <div className="flex items-center justify-between mb-3">
+                          <div className="flex items-center gap-3">
+                            <span className="text-lg md:text-xl">{skill.icon}</span>
+                            <span className="font-medium text-gray-800 dark:text-gray-200 text-sm md:text-base">{skill.name}</span>
                           </div>
-                          <span className="text-[10px] md:text-xs font-bold text-blue-500 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/40 px-2 py-0.5 rounded-md">{skill.level}%</span>
+                          <span className="text-xs font-bold text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/40 px-2 py-1 rounded-md">{skill.level}%</span>
                         </div>
-                        <div className="relative h-1.5 bg-gray-200 dark:bg-gray-800/80 rounded-full overflow-hidden shadow-inner">
+                        <div className="relative h-2 bg-gray-200 dark:bg-gray-800/80 rounded-full overflow-hidden shadow-inner">
                           <div 
                             className="h-full bg-gradient-to-r from-blue-500 to-blue-400 dark:from-blue-600 dark:to-blue-400 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.5)] transition-all duration-1000 ease-out"
                             style={{ 
@@ -731,17 +731,17 @@ const Portfolio = () => {
 
                   <div className="space-y-4">
                     {skills.marketing.map((skill, index) => (
-                      <div key={skill.name} className="skill-item bg-[#12182A] rounded-xl p-3 md:p-4 border border-white/5" style={{ animationDelay: `${index * 0.1}s` }}>
+                      <div key={skill.name} className="skill-item bg-gray-100 dark:bg-[#12182A] rounded-xl p-3 md:p-4 border border-gray-200 dark:border-white/5" style={{ animationDelay: `${index * 0.1}s` }}>
                         <div className="flex items-center justify-between mb-3">
                           <div className="flex items-center gap-3">
                             <span className="text-lg md:text-xl">{skill.icon}</span>
-                            <span className="font-medium text-gray-200 text-sm md:text-base">{skill.name}</span>
+                            <span className="font-medium text-gray-800 dark:text-gray-200 text-sm md:text-base">{skill.name}</span>
                           </div>
-                          <span className="text-xs font-bold text-yellow-400 bg-yellow-900/40 px-2 py-1 rounded-md">{skill.level}%</span>
+                          <span className="text-xs font-bold text-yellow-600 dark:text-yellow-400 bg-yellow-100 dark:bg-yellow-900/40 px-2 py-1 rounded-md">{skill.level}%</span>
                         </div>
-                        <div className="relative h-2 bg-gray-800/80 rounded-full overflow-hidden shadow-inner">
+                        <div className="relative h-2 bg-gray-200 dark:bg-gray-800/80 rounded-full overflow-hidden shadow-inner">
                           <div
-                            className="h-full bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-full shadow-[0_0_10px_rgba(234,179,8,0.5)] transition-all duration-1000 ease-out"
+                            className="h-full bg-gradient-to-r from-yellow-500 to-yellow-400 dark:from-yellow-600 dark:to-yellow-400 rounded-full shadow-[0_0_10px_rgba(234,179,8,0.5)] transition-all duration-1000 ease-out"
                             style={{
                               width: `${skill.level}%`,
                               animationDelay: `${index * 0.2}s`
@@ -771,17 +771,17 @@ const Portfolio = () => {
 
                   <div className="space-y-4">
                     {skills.soft.map((skill, index) => (
-                      <div key={skill.name} className="skill-item bg-[#12182A] rounded-xl p-3 md:p-4 border border-white/5" style={{ animationDelay: `${index * 0.1}s` }}>
+                      <div key={skill.name} className="skill-item bg-gray-100 dark:bg-[#12182A] rounded-xl p-3 md:p-4 border border-gray-200 dark:border-white/5" style={{ animationDelay: `${index * 0.1}s` }}>
                         <div className="flex items-center justify-between mb-3">
                           <div className="flex items-center gap-3">
                             <span className="text-lg md:text-xl">{skill.icon}</span>
-                            <span className="font-medium text-gray-200 text-sm md:text-base">{skill.name}</span>
+                            <span className="font-medium text-gray-800 dark:text-gray-200 text-sm md:text-base">{skill.name}</span>
                           </div>
-                          <span className="text-xs font-bold text-cyan-400 bg-cyan-900/40 px-2 py-1 rounded-md">{skill.level}%</span>
+                          <span className="text-xs font-bold text-cyan-600 dark:text-cyan-400 bg-cyan-100 dark:bg-cyan-900/40 px-2 py-1 rounded-md">{skill.level}%</span>
                         </div>
-                        <div className="relative h-2 bg-gray-800/80 rounded-full overflow-hidden shadow-inner">
+                        <div className="relative h-2 bg-gray-200 dark:bg-gray-800/80 rounded-full overflow-hidden shadow-inner">
                           <div
-                            className="h-full bg-gradient-to-r from-cyan-600 to-cyan-400 rounded-full shadow-[0_0_10px_rgba(6,182,212,0.5)] transition-all duration-1000 ease-out"
+                            className="h-full bg-gradient-to-r from-cyan-500 to-cyan-400 dark:from-cyan-600 dark:to-cyan-400 rounded-full shadow-[0_0_10px_rgba(6,182,212,0.5)] transition-all duration-1000 ease-out"
                             style={{
                               width: `${skill.level}%`,
                               animationDelay: `${index * 0.2}s`
