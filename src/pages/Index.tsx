@@ -955,14 +955,7 @@ const Portfolio = () => {
                         </div>
                       )}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-                      <div className="absolute top-4 right-4">
-                        <span className={`px-3 py-1 text-white text-xs rounded-full font-medium shadow-lg ${project.category === 'digital-marketing'
-                            ? 'bg-yellow-500'
-                            : 'bg-yellow-500'
-                          }`}>
-                          {projectCategories[project.category as keyof typeof projectCategories].name}
-                        </span>
-                      </div>
+
                     </div>
 
                     {project.subCategory !== 'graphic-design' && (
