@@ -503,7 +503,7 @@ const Portfolio = () => {
               </div>
 
               {/* Desktop Navigation */}
-              <div className="hidden md:flex space-x-8">
+              <div className="hidden md:flex space-x-8 items-center">
                 {['Hero', 'About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
                   <button
                     key={item}
@@ -517,6 +517,12 @@ const Portfolio = () => {
                     )}
                   </button>
                 ))}
+                <a 
+                  href="/social-media-portfolio.html" 
+                  className="hover:text-yellow-500 transition-colors duration-200 relative font-medium whitespace-nowrap"
+                >
+                  Social Media Handles
+                </a>
               </div>
 
               <div className="flex items-center space-x-4">
@@ -551,6 +557,12 @@ const Portfolio = () => {
                     {item}
                   </button>
                 ))}
+                <a 
+                  href="/social-media-portfolio.html" 
+                  className="block w-full text-left px-3 py-2 text-base font-medium hover:text-yellow-500 transition-colors"
+                >
+                  Social Media Handles
+                </a>
               </div>
             </div>
           )}
