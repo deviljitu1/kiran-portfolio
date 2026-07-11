@@ -39,26 +39,29 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme, activeSection, scr
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8 items-center">
             {['Hero', 'About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
-              <button
-                key={item}
-                onClick={() => handleNavClick(item)}
-                className={`hover:text-yellow-500 transition-colors duration-200 relative ${activeSection === item.toLowerCase() ? 'text-yellow-500 font-medium' : ''}`}
-              >
-                {item}
-                {activeSection === item.toLowerCase() && (
-                  <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600"></div>
+              <React.Fragment key={item}>
+                <button
+                  onClick={() => handleNavClick(item)}
+                  className={`hover:text-yellow-500 transition-colors duration-200 relative ${activeSection === item.toLowerCase() ? 'text-yellow-500 font-medium' : ''}`}
+                >
+                  {item}
+                  {activeSection === item.toLowerCase() && (
+                    <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600"></div>
+                  )}
+                </button>
+                {item === 'Experience' && (
+                  <Link 
+                    to="/social-media-portfolio" 
+                    className={`hover:text-yellow-500 transition-colors duration-200 relative font-medium whitespace-nowrap ${location.pathname === '/social-media-portfolio' ? 'text-yellow-500' : ''}`}
+                  >
+                    Social Media Handles
+                    {location.pathname === '/social-media-portfolio' && (
+                      <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600"></div>
+                    )}
+                  </Link>
                 )}
-              </button>
+              </React.Fragment>
             ))}
-            <Link 
-              to="/social-media-portfolio" 
-              className={`hover:text-yellow-500 transition-colors duration-200 relative font-medium whitespace-nowrap ${location.pathname === '/social-media-portfolio' ? 'text-yellow-500' : ''}`}
-            >
-              Social Media Handles
-              {location.pathname === '/social-media-portfolio' && (
-                <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600"></div>
-              )}
-            </Link>
           </div>
 
           <div className="flex items-center space-x-4">
@@ -85,21 +88,24 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme, activeSection, scr
         <div className={`md:hidden ${isDark ? 'bg-gray-900' : 'bg-white'} border-t ${isDark ? 'border-gray-800' : 'border-gray-200'}`}>
           <div className="px-2 pt-2 pb-3 space-y-1">
             {['Hero', 'About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
-              <button
-                key={item}
-                onClick={() => handleNavClick(item)}
-                className="block w-full text-left px-3 py-2 text-base font-medium hover:text-yellow-500 transition-colors"
-              >
-                {item}
-              </button>
+              <React.Fragment key={item}>
+                <button
+                  onClick={() => handleNavClick(item)}
+                  className="block w-full text-left px-3 py-2 text-base font-medium hover:text-yellow-500 transition-colors"
+                >
+                  {item}
+                </button>
+                {item === 'Experience' && (
+                  <Link 
+                    to="/social-media-portfolio"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block w-full text-left px-3 py-2 text-base font-medium hover:text-yellow-500 transition-colors"
+                  >
+                    Social Media Handles
+                  </Link>
+                )}
+              </React.Fragment>
             ))}
-            <Link 
-              to="/social-media-portfolio"
-              onClick={() => setIsMenuOpen(false)}
-              className="block w-full text-left px-3 py-2 text-base font-medium hover:text-yellow-500 transition-colors"
-            >
-              Social Media Handles
-            </Link>
           </div>
         </div>
       )}
