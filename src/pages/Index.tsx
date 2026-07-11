@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import LoadingScreen from '@/components/LoadingScreen';
 import MouseParallax from '@/components/MouseParallax';
 import FloatingIcons from '@/components/FloatingIcons';
+import Navbar from '@/components/Navbar';
 gsap.registerPlugin(ScrollTrigger);
 
 // Import images
@@ -495,78 +496,7 @@ const Portfolio = () => {
 
       <div className={`min-h-screen transition-colors duration-300 relative ${isDark ? 'bg-black text-white' : 'bg-gray-50 text-gray-900'}`}>
         {/* Navigation */}
-        <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isDark ? 'bg-gray-900/95' : 'bg-white/95'} backdrop-blur-md border-b ${isDark ? 'border-gray-800' : 'border-gray-200'} shadow-sm`}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <div className="font-bold text-xl bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
-                Kiran Srivastava
-              </div>
-
-              {/* Desktop Navigation */}
-              <div className="hidden md:flex space-x-8 items-center">
-                {['Hero', 'About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
-                  <button
-                    key={item}
-                    onClick={() => scrollToSection(item.toLowerCase())}
-                    className={`hover:text-yellow-500 transition-colors duration-200 relative ${activeSection === item.toLowerCase() ? 'text-yellow-500 font-medium' : ''
-                      }`}
-                  >
-                    {item}
-                    {activeSection === item.toLowerCase() && (
-                      <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600"></div>
-                    )}
-                  </button>
-                ))}
-                <a 
-                  href="/social-media-portfolio.html" 
-                  className="hover:text-yellow-500 transition-colors duration-200 relative font-medium whitespace-nowrap"
-                >
-                  Social Media Handles
-                </a>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <button
-                  onClick={toggleTheme}
-                  className="p-2 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-800 transition-colors"
-                >
-                  {isDark ? <Sun size={20} /> : <Moon size={20} />}
-                </button>
-
-                {/* Mobile menu button */}
-                <button
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
-                  className="md:hidden p-2 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-800"
-                >
-                  {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <div className={`md:hidden ${isDark ? 'bg-gray-900' : 'bg-white'} border-t ${isDark ? 'border-gray-800' : 'border-gray-200'}`}>
-              <div className="px-2 pt-2 pb-3 space-y-1">
-                {['Hero', 'About', 'Skills', 'Projects', 'Experience', 'Contact'].map((item) => (
-                  <button
-                    key={item}
-                    onClick={() => scrollToSection(item.toLowerCase())}
-                    className="block w-full text-left px-3 py-2 text-base font-medium hover:text-yellow-500 transition-colors"
-                  >
-                    {item}
-                  </button>
-                ))}
-                <a 
-                  href="/social-media-portfolio.html" 
-                  className="block w-full text-left px-3 py-2 text-base font-medium hover:text-yellow-500 transition-colors"
-                >
-                  Social Media Handles
-                </a>
-              </div>
-            </div>
-          )}
-        </nav>
+        <Navbar isDark={isDark} toggleTheme={toggleTheme} activeSection={activeSection} scrollToSection={scrollToSection} />
 
         {/* Hero Section */}
         <section ref={heroRef} id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
